@@ -1,10 +1,203 @@
----
-layout: default
-title: Navegación en tablet o smartphone
-color: "#2485dc"
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Navegación en tablet o smartphone</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Le styles -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/camera.css" rel="stylesheet">
+<link href="css/icons.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+<!-- Fav and touch icons -->
+<link rel="shortcut icon" href="img/ico/favicon.png">
 
-<div class="container">
+<style>
+body.boxed {
+    background-image: -webkit-radial-gradient(center center, ellipse cover, #aaa 0%, white 100%);
+    background-image: -moz-radial-gradient(center center, ellipse cover, #aaa 0%, white 100%);  
+    background-image: -ms-radial-gradient(center center, ellipse cover, #aaa 0%, white 100%);
+    background-image: -o-radial-gradient(center center, ellipse cover, #aaa 0%, white 100%);
+} 
+body.boxed > div.body {
+  z-index: auto;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/custom.js"></script>
+
+
+<style>
+@media screen and (max-width:800px) {
+  .tinynav {    
+    background:#2485dc;
+  } 
+}
+body.boxed div.body {
+  border-top:5px solid #2485dc;
+}
+.testimonial-name, .service-box.black .circleicon i, .service-box.featured .circleicon i, .service-box:hover i, .footerlogo47, .primarycolor, a, a:hover {
+  color:#2485dc;
+}
+.cameraContents .camera_caption span, .popular .vuzz-button.buttonprice, .popular .vuzz-button, .popular .vuzz-pricing-per, .popular .vuzz-pricing-cost, .captionicons, a.tagcloud:hover,.tagcloud a:hover, .service-box.featured , .service-box:hover, #skill i, article .day, .totop, .totop:hover, .primarybg {
+  background:#2485dc;
+}
+.navbar .nav>li>a:focus,.navbar .nav>li>a:hover,.navbar .nav>.active>a,.navbar .nav>.active>a:hover,.navbar .nav>.active>a:focus {  
+  background-color:#2485dc;
+}
+.navbar .nav li.dropdown.open>.dropdown-toggle,.navbar .nav li.dropdown.active>.dropdown-toggle,.navbar .nav li.dropdown.open.active>.dropdown-toggle {
+  background-color:#2485dc; 
+}
+#search a { 
+  background:#2485dc url(../img/part-btn-search.png) no-repeat center center;
+}
+.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-submenu:hover>a,.dropdown-submenu:focus>a { 
+  background-color:#2485dc;
+}
+.footerdark h1 {  
+  border-bottom:1px solid #2485dc;
+}
+.grey-box-icon:hover .fontawesome-icon.circle-white,.grey-box-icon.active .fontawesome-icon.circle-white {
+  background-color:#2485dc; 
+}
+a.prev,a.next {
+  background:url(../img/carousel_arrows.png) no-repeat #2485dc;
+}
+a.next {
+  background-position:-22px 0
+}
+.btn-primary {
+  background-color:#2485dc;
+}
+.panel,.panel1 {
+border-left:8px solid #2485dc;
+}
+#filter ul li .selected {
+color: #2485dc !Important;
+}
+.vuzz-pricing-table>div.popular {
+border-top:#2485dc 3px solid;
+}
+::selection {background:#2485dc;color:#fff;}
+/**/
+</style>
+
+
+</head>
+<body class="boxed">
+<div class="body">
+  <!-- Navigation -->
+  <header>
+  <div class="container clearfix">
+    <div class="row-fluid">
+      <div class="span12">
+        <h1 class="brandlogo"><a href="/"><img src="img/360.png" alt=""></a></h1>
+        <div class="topinfo">
+          <!--
+          <ul class="social-icons list-soc">
+            <li><a href="index.html#"><i class="icon-facebook"></i></a></li>
+            <li><a href="index.html#"><i class="icon-twitter"></i></a></li>
+            <li><a href="index.html#"><i class="icon-linkedin"></i></a></li>
+            <li><a href="index.html#"><i class="icon-google-plus"></i></a></li>
+            <li><a href="index.html#"><i class="icon-pinterest"></i></a></li>
+          </ul>
+          -->
+          <div style="position: absolute; top: 68px; right: 60px;">
+            Aplicaciones para PYMEs desarrolladas por Google.
+          </div>
+          <!-- FIXME
+          <div class="infophone">
+            <i class="icon-phone"></i> Tel: +8 737 924 6035
+          </div>
+          <div class="infoaddress">
+             3953 Berkley Street, Fort Washington, 19034
+          </div>
+          -->
+        </div>
+        <div class="clearfix">
+        </div>
+        <div class="row-nav navbar">
+          <div class="navbar-inner">
+            <ul id="nav" class="nav">
+
+              
+                
+                  <li><a href="/">Home</a></li>
+                
+                <li class="divider-vertical"></li>
+              
+                
+                  
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sobre nosotros <b class="caret"></b></a>
+                    <ul class="dropdown-menu js-activated " style="display: none;">
+                      
+                        <li><a href="about.html">Sobre nosotros</a></li>
+                      
+                        <li><a href="faq.html">Preguntas frecuentes</a></li>
+                      
+                    </ul>
+                  </li>
+                
+                <li class="divider-vertical"></li>
+              
+                
+                  <li><a href="servicios.html">Servicios</a></li>
+                
+                <li class="divider-vertical"></li>
+              
+                
+                  
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Navegacion <b class="caret"></b></a>
+                    <ul class="dropdown-menu js-activated " style="display: none;">
+                      
+                        <li><a href="navegacion.html">Navegacion Ordenador</a></li>
+                      
+                        <li><a href="navegacion.tablet.html">Navegacion Tablet</a></li>
+                      
+                    </ul>
+                  </li>
+                
+                <li class="divider-vertical"></li>
+              
+                
+                  <li><a href="portafolio.html">Portafolio</a></li>
+                
+                <li class="divider-vertical"></li>
+              
+                
+                  <li class="active selected"><a href="blog.html">Blog</a></li>
+                
+                <li class="divider-vertical"></li>
+              
+            </ul>
+            <form id="search" action="http://www.google.com/search" method="GET">
+                <input type="hidden" name="sitesearch" value="en360grados.org" />
+                <input type="text" onfocus="if(this.value =='Enter search keywords here...' ) this.value=''" onblur="if(this.value=='') this.value='Enter search keywords here...'" value="Enter search keywords here..." name="q">
+                <a href="index.html#"></a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </header>
+  <div class="text-center">
+    <img src="img/sha.png" class="slidershadow" alt="">
+  </div>
+  <!-- /end header -->
+      
+  <div class="container">
 	<div class="row-fluid">
 		<div class="span8 span-fixed-sidebar">
 			<div class="row-fluid">
@@ -152,4 +345,45 @@ color: "#2485dc"
 
 	</div>
 </div>
+
+
+      
+  <!-- FOOTER BEGIN
+================================================== -->
+  <div class="footer footerdark">
+    <div class="text-center wraptotop">
+      <a class="totop"><i class="icon-chevron-up"></i></a>
+    </div>
+  </div>
+  <div class="footerbottom footerbottomdark">
+    <div class="container">
+      <div class="row-fluid">
+        <!-- left -->
+        <div class="span4 smallspacetop">
+          <p class="smaller">
+            <span class="copyright">© </span> en360grados.es
+          </p>
+        </div>
+        <!--
+        <div class="span8 smallspacetop">
+          <div class="pull-right smaller">
+            <ul class="footermenu">
+              <li><a href="index.html#">Home</a></li>
+              <li><a href="index.html#">Work</a></li>
+              <li><a href="index.html#">Pages</a></li>
+              <li><a href="index.html#">Blog</a></li>
+              <li><a href="index.html#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="clearfix">
+          </div>
+        </div>
+        -->
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
 
